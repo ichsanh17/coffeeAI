@@ -485,7 +485,7 @@ def main():
 
             # Tabel prediksi
             pred_df = {
-                "Kelas": classes,
+                "<b>Kelas</b>": classes,
                 "Probabilitas": [f"{pred:.2%}" for pred in predictions]
             }
             st.table(pred_df)
