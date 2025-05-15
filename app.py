@@ -463,15 +463,15 @@ def main():
                 """
                 <style>
                     tbody tr:nth-child(odd) {
-                        background-color: #D2691E;  /* Warna coklat kopi */
+                        # background-color: #D2691E;  /* Warna coklat kopi */
                         color: var(--coffee-cream) !important;
                     }
                     tbody tr:nth-child(even) {
-                        background-color: #8B4513;  /* Warna coklat lebih gelap */
+                        # background-color: #8B4513;  /* Warna coklat lebih gelap */
                         color: var(--coffee-cream) !important;
                     }
                     th {
-                        background-color: #3E2723;  /* Coklat gelap untuk header */
+                        # background-color: #3E2723;  /* Coklat gelap untuk header */
                         color: var(--coffee-cream) !important;
                         
                     }
