@@ -397,7 +397,7 @@ def main():
         if uploaded_file is not None:
             # Display uploaded image
             image = Image.open(uploaded_file)
-            st.image(image, caption="Gambar yang diunggah", use_column_width=True)
+            st.image(image, caption="Gambar yang diunggah", use_container_width =True)
             
             # Automatic classification after upload
             with st.spinner("Menganalisis kopi... ☕"):
@@ -464,16 +464,20 @@ def main():
                 <style>
                     tbody tr:nth-child(odd) {
                         background-color: #D2691E;  /* Warna coklat kopi */
+                        color: var(--coffee-cream) !important;
                     }
                     tbody tr:nth-child(even) {
                         background-color: #8B4513;  /* Warna coklat lebih gelap */
+                        color: var(--coffee-cream) !important;
                     }
                     th {
                         background-color: #3E2723;  /* Coklat gelap untuk header */
-                        color: white;
+                        color: var(--coffee-cream) !important;
+                        
                     }
                     td {
-                        color: white;
+                        
+                        color: var(--coffee-cream) !important;
                     }
                 </style>
                 """, unsafe_allow_html=True
@@ -505,14 +509,14 @@ def main():
                     st.image(
                         st.session_state.original_image,
                         caption="Gambar Asli",
-                        use_column_width=True,
+                        use_container_width =True,
                     )
 
                 with grad_col2:
                     st.image(
                         gradcam_image,
                         caption="GradCAM Visualization",
-                        use_column_width=True,
+                        use_container_width =True,
                     )
 
                 # Explanation
